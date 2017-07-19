@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Video TAGS</title>
+</head>
+<body>
+	<h1>Aqui abajo esta el video de ejemplo</h1>
+	<video src="rabbit320.webm" controls preload="auto">
+		<p>Este video no es soportado por su navegador</p>
+	</video>
+
+	<!-- Ejemplo de como asociar varios formatos a un video -->
+	<!-- Esto es para darle soporte a los distintos navegadores (webm para chrome y firefox) y mp4 para safari y explorer -->
+	
+	<video controls>
+		<source src="rabbit320.mp4" type="video/mp4">
+		<source src="rabbit320.webm" type="video/webm">
+		<p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+	</video>
+
+	<h1>Extra video features example</h1>
+
+    <video controls width="400" height="400"
+           loop muted preload="auto"
+           poster="poster.png">
+      <source src="rabbit320.mp4" type="video/mp4">
+      <source src="rabbit320.webm" type="video/webm">
+      <p>Your browser doesn't support HTML5 video. Here is a <a href="rabbit320.mp4">link to the video</a> instead.</p>
+    </video>
+</body>
+</html>
