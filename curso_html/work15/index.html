@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Active Learning &lt;Video&gt; y &lt;Audio&gt;</title>
+</head>
+<body>
+	<h1>Video y Audio Tags en HTML</h1>
+	<div>
+		<audio controls>
+			<source src="viper.mp3" type="audio/mp3">
+			<source src="viper.mp3" type="audio/ogg">
+			<p>Si tu navegador no soporta el formato vealo en el siguiente link <a href="viper.mp3">Archivo de audio</a></p>
+		</audio>
+	</div>
+	<div>
+		<video controls preload="metadata" id="video" poster="conejito.jpg">
+			<source src="rabbit320.webm" type="video/webm">
+			<track kind="subtitles" src="subtitulos.vtt" srclang="es" label="Español" default>
+			<p>Si tu navegador no soporta este formato de video vealo en el siguiente link <a href="rabbit320.webm">Archivo de video</p>
+		</video>
+	</div>
+</body>
+</html>
