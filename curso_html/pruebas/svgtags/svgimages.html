@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Imagenes SVG</title>
+</head>
+<body>
+	<h1>Trabajando Con SVG</h1>
+	<h2>Ejemplo de como hacer un SVG con formas simples</h2>
+	<svg version="1.1"
+     baseProfile="full"
+     width="300" height="200"
+     xmlns="http://www.w3.org/2000/svg">
+		<rect width="100%" height="100%" fill="black" />
+		<circle cx="150" cy="100" r="90" fill="blue" />
+	</svg>
+	<h2>Agregando svg de una manera rapida a nuestro HTML</h2>
+	<h3>Pros</h3>
+	<ul>
+		<li>Sintaxis similar a la de un img comun ademas de tener disponible un atributo alt</li>
+		<li>Puedes hacer la imagen linkeable a traves del uso del tag &lt;a&gt;</li>
+	</ul>
+	<h3>Cons</h3>
+	<ul>
+		<li>No puedes manipular la imagen con javascript</li>
+		<li>Si quieres controlar el contenido SVG con CSS debe ser a traves de inline-style los links externos a CSS que manipulen esto no tienen efecto sobre el SVG</li>
+		<li>No puedes aplicar estilo con pseudo clases ejemplo :focus</li>
+	</ul>
+	<img 
+    src="kiwi.svg" 
+    alt="triangle with all three sides equal"
+    height="87px"
+    width="100px" />
+
+    <h2>Ejemplo de como incrustar un SVG en linea en nuestro documento HTML</h2>
+	<h3>Pros</h3>
+	<ul>
+		<li>Mejora el rendimiento de carga del documento HTML</li>
+		<li>Se puede manipular con CSS</li>
+		<li>Puedes usar interacciones con pseudo clases :focus</li>
+		<li>Se puede convertir en hipervinculo agregando el tag &lt;a&gt;</li>
+	</ul>
+	<h3>Cons</h3>
+	<ul>
+		<li>Este metodo es efectivo solo si utilizas el SVG en un solo sitio, su duplicacion hace el codigo inmantenible a largo plazo</li>
+		<li>El codigo extra de SVG incrementa el tamaño de tu HTML</li>
+		<li>El navegador no cachea los SVG inline</li>
+		<li>Puedes incluir contenido alternativo con un fallback &lt;foreignObject&gt; pero los navegadores que soportan SVG descargan cualquier imagen de respaldo, asi que se debe tener en consideracion esto a la hora de querer dar soporte a navegadores mas antiguos</li>
+	</ul>
+
+	<h2>Ejemplo de como poner un SVG en un &lt;iframe&gt;</h2>
+	<iframe src="kiwi.svg" width="1000" height="520" style="border:none" sandbox>
+    	<img src="kiwi.png" alt="Triangle with three unequal sides" />
+    </iframe>
+    <p>Este no es el mejor método para elegir</p>
+    <h3>Cons</h3>
+    <ul>
+    	<li>Los iframes tienen un mecanismo de fallback, pero solo si el navegador no soporta por completo el iframe y no el SVG</li>
+    	<li>Si el iframe y el SVG no tienen el mismo origen dificilmente lo podras manipular con javascript</li>
+    </ul>
+</iframe>
+</body>
+</html>
