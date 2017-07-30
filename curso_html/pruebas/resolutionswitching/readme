@@ -1,0 +1,21 @@
+Resolution Switching es la manera en que nosotros logramos que nuestras imagenes se adapten dependiendo del dispositivo que nosotros estamos utilizando para ver nuestra pagina web, los principales elementos html que nos ayudan a conseguir esto son
+
+<!-- Esto tiene un comportamiento mas esperado respecto al codigo de abajo -->
+<picture>
+<source media="(max-width: 320px)" srcset="elva-fairy-320w.jpg">
+<source media="(max-width: 480px)" srcset="elva-fairy-480w.jpg">
+<img src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy">
+</picture>
+
+<!-- Esto no tiene el comportamiento esperado en chrome -->
+<img srcset="elva-fairy-320w.jpg 320w,
+elva-fairy-480w.jpg 480w,
+elva-fairy-800w.jpg 800w"
+sizes="(max-width: 320px) 280px,
+(max-width: 480px) 440px,
+800px"
+src="elva-fairy-800w.jpg" alt="Elva dressed as a fairy"> 
+
+Esto lo que hace es cargar una imagen u otra dependiendo del ancho de nuestro dispositivo
+
+Tambien existe el Resolution Switching Mismo tamaño pero distinta resolucion, actualmente hay muchos dispositivos que tienen el mismo tamaño fisico pero distinta resolucion, osea a simple vista pareciera que tienen el mismo ancho pero en la realidad algunos tienen mucha mayor resolucion en sus pantallas, entonces para compensar esto la imagen se mantiene del mismo tamaño visual pero dependiendo de la resolucion se carga una imagen u otra.

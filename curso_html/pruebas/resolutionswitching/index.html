@@ -35,6 +35,10 @@
         margin: 0 auto;
         max-width: 100%;
       }
+      img#sfo {
+        transition: width 0.5s;
+        max-width: 50vw;
+      }
     </style>
   </head>
   <body>
@@ -64,7 +68,7 @@
         </picture> -->
 
         <!-- Esto no tiene el comportamiento esperado en chrome -->
-        <img srcset="elva-fairy-320w.jpg 320w,
+        <img id="sfo" srcset="elva-fairy-320w.jpg 320w,
                      elva-fairy-480w.jpg 480w,
                      elva-fairy-800w.jpg 800w"
              sizes="(max-width: 320px) 280px,

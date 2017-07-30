@@ -1,0 +1,9 @@
+El problema de dirección de arte hace alusion a nuestra necesidad de adaptar una imagen a distintos dispositivos por ejemplo una imagen con algun detalle en especifico que queremos destacar, en la web se verá bien pero en un dispositivo mas pequeño quizas ese detalle se pierda o algo que queremos resaltar, entonces la imagen mas apropiada para dispositivos pequeños sea una en que ese detalle siga siendo visible en nuestros dispositivos
+
+Con ayuda del elemento <picture> nosotros podemos emplear algun tipo de solucion para esto
+
+<picture>
+  <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
+  <source media="(min-width: 800px)" srcset="elva-800w.jpg">
+  <img src="elva-800w.jpg" alt="Chris standing up holding his daughter Elva">
+</picture>
