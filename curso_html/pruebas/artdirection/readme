@@ -2,6 +2,8 @@ El problema de dirección de arte hace alusion a nuestra necesidad de adaptar un
 
 Con ayuda del elemento <picture> nosotros podemos emplear algun tipo de solucion para esto
 
+al igual que los elementos <video> y <audio> el tag <picture> nos permite tener muchos <source> adentro
+
 <picture>
   <source media="(max-width: 799px)" srcset="elva-480w-close-portrait.jpg">
   <source media="(min-width: 800px)" srcset="elva-800w.jpg">
