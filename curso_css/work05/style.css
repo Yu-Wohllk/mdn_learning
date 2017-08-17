@@ -1,0 +1,19 @@
+
+/* Primer bloque de declaraciones */
+h1 {
+  colour: blue; /* aqui la propiedad colour es invalida */
+  background-color: yellow;
+  border: 1px solid black;
+}
+
+
+/* Segundo bloque de declaracion */
+/* aqui se aplican reglas para <p> en ambos casos */
+p {
+  color: red;
+}
+
+/* Tercer bloque de declaraciones */
+p, li {
+  text-decoration: underline;
+}

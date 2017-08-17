@@ -1,0 +1,15 @@
+h1 {
+	color: orange;
+	background-color: #FF4455;
+}
+
+p {
+	color: green;
+	background-color: blue;
+	padding: 30px;
+}
+
+li {
+	display: inline-block;
+	border: 1px solid black;
+}

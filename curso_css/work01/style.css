@@ -1,0 +1,16 @@
+/* aplica el estilo a los elementos <h1> */
+h1 {
+	/*Cada par de propiedad valor se llama declaracion*/
+	/*la primera define el color del texto en azul*/
+	color: blue;
+	/*define el color de fondo en amarillo*/
+	background-color: yellow;
+	/*define el borde en negro de ancho 1px*/
+	border: 1px solid black;
+}
+
+/* aplica el estilo a los elementos <p> */
+p {
+	/*define el color de la fuente en rojo*/
+	color: red;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Representacion del DOM</title>
+</head>
+<style type="text/css">
+	span {
+		border: 1px solid black;
+		background-color: lime;
+	}
+</style>
+<body>
+	<p>
+		Let's use:
+		<span>Cascading</span>
+		<span>Style</span>
+		<span>Sheets</span>
+	</p>
+</body>
+</html>
+
+
+<!--
+En el ejemplo de arriba
+
+El DOM
+
+P  -> Elemento padre o nodo padre
+├─ "Let's use:" -> Texto nodo hijo del nodo <p>
+├─ SPAN -> nodo hijo de <p>
+|  └─ "Cascading" texto hijo del nodo <span>
+├─ SPAN -> nodo hijo de <p>
+|  └─ "Style" texto hijo del nodo <span>
+└─ SPAN -> nodo hijo de <p>
+   └─ "Sheets" texto hijo del nodo <span>
+
+El navegador va a interpretar el HTML y creara el DOM desde ahi, luego analizara el css, como solo hay una regla para los elementos <span> la regla se aplicara para todos los span que hayan en el documento en este caso 3
+
+-->
