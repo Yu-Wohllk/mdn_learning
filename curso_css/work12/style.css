@@ -14,6 +14,6 @@
 /* All elements with the attribute "data-vegetable",
    containing the value "spicy", even among others,
    are given a red text color */
-[data-vegetable~="spicy"] {
+[data-quantity~="optional"] {
   color: red;
 }
