@@ -1,0 +1,27 @@
+/* En este codigo estamos haciendo lo siguiente */
+/* Seteamos el margin, padding y border-width respectivamente */
+
+p {
+  margin: 5px; /* Un valor en margin indica que todos los lados tendran un valor de 5 pixeles */
+  padding: 10px; /* Un valor en padding indica que todos los lados tendran un valor de 5 pixeles */
+  border: 2px solid black; /* el ancho del borde esta definido en el primer valor de esta definicion corta de border */
+  background-color: cyan;
+}
+
+/* Definimos en cada <p> un ancho mas grande para que se vaya enanchando cada vez mas */
+/* Definimos en cada <p> un tamaño de fuente cada vez mas grande para que esta vaya creciendo cada vez mas font-size se refiere al alto de cada caracter */
+
+p:nth-child(1) {
+  width: 150px;
+  font-size: 18px;
+}
+
+p:nth-child(2) {
+  width: 250px;
+  font-size: 24px;
+}
+
+p:nth-child(3) {
+  width: 350px;
+  font-size: 30px;
+}
