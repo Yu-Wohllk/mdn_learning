@@ -1,0 +1,19 @@
+div .boxes {
+  margin: 10px;
+  font-size: 200%;
+  color: white;
+  height: 150px;
+  border: 2px solid black;
+}
+
+.boxes:nth-child(1) {
+  background-color: red;
+  /* Ocupara un ancho fijo invariable aunque se cambie de resolucion*/
+  width: 650px;
+}
+
+.boxes:nth-child(2) {
+  background-color: blue;
+  /* Toa siempre el 75 % del ancho total del parent */
+  width: 75%;
+}
